@@ -12,21 +12,12 @@ void draw()
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(1.0, 1.0, 1.0);
 
-    glPointSize(10);
-    glBegin(GL_POINTS);
+    glLineWidth(2.5);
+    glBegin(GL_LINES);
 
-    glColor3f(1.0, 0.0, 0.0);
-    glVertex3f(0.3, 0.4, 0.0);
-    glColor3f(1.0, 0.3, 0.6);
-    glVertex3f(0.5, 0.5, 0.0);
-    glColor3f(0.3, 1.0, 0.5);
-    glVertex3f(0.7, 0.4, 0.0);
-    glColor3f(0.6, 0.0, 1.0);
-    glVertex3f(0.4, 0.6, 0.0);
-    glColor3f(1.0, 0.0, 1.0);
-    glVertex3f(0.2, 0.7, 0.0);
-    glColor3f(1.0, 0.0, 1.0);
-    glVertex3f(0.1, 1.0, 0.5);
+    glColor3f(0.0, 0.0, 1.0);   //Warna Biru
+    glVertex3f(0.2, 0.5, 0.0);  // Koordinat Titik 1
+    glVertex3f(0.8, 0.5, 0.0);  // Koordinat Titik 2
 
     glEnd();
     glFlush();
